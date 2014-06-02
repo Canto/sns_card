@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">Twitter Card 애드온</title>
+	<description xml:lang="ko">
+		트위터로 게시글을 보낼 시 요약 정보등을 표시해주는 Meta Tag를 만들어줍니다.
+	</description>
+	<version>1.0</version>
+	<date>2014-06-02</date>
+	<author email_address="canto87@naver.com" link="http://canto.btool.kr">
+		<name xml:lang="ko">Canto</name>
+	</author>
+	<extra_vars>
+		<var name="twitter">
+			<title xml:lang="ko">Twitter ID</title>
+			<description xml:lang="ko">사이트 전용 트위터가 존재한다면 트위터 아이디를 적어주세요
+				예) @twitter ( @ 까지 포함 해 주셔야 합니다. )
+			</description>
+		</var>
+	</extra_vars>
+</addon>
