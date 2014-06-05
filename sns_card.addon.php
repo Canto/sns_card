@@ -13,7 +13,7 @@ if($called_position == "before_display_content"){
 		$oDocumentModel = &getModel('document');
 		$oDocument = $oDocumentModel->getDocument($doc_src);
 		$title = cut_str(strip_tags($oDocument->get('title')),70,'');
-		$content = cut_str(strip_tags($oDocument->get('content')),200,'');
+		$content = cut_str(trim(preg_replace('/\s\s+/', ' ',strip_tags($oDocument->get('content')))),200,'');
 		$file_list = $oDocument->getUploadedFiles();
 		if($file_list)
 		{
